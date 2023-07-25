@@ -145,8 +145,8 @@ namespace JCMG.EntitasRedux.Editor
 		{
 			var changed = GUI.changed;
 			GUILayout.BeginHorizontal();
-			searchString = GUILayout.TextField(searchString, GUI.skin.FindStyle("ToolbarSeachTextField"));
-			if (GUILayout.Button(string.Empty, GUI.skin.FindStyle("ToolbarSeachCancelButton")))
+			searchString = GUILayout.TextField(searchString);
+			if (GUILayout.Button(string.Empty))
 			{
 				searchString = string.Empty;
 			}
